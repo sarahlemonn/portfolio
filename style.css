@@ -1,4 +1,4 @@
-/* LOCAL FONT FAMILY */ 
+/* FONT FAMILY */ 
 
 @font-face {
     font-family: 'Cyberpunks';
@@ -17,7 +17,7 @@
          url('font/bebas_neue/BebasNeue-Regular.woff');
 }
 
-/* SCROLL SMOOTH */
+/* SMOOTH SCROLL & NO CURSOR */
 
 html {
     scroll-behavior: smooth;
@@ -61,7 +61,7 @@ body {
     opacity: 80%;
 }
 
-/* PARTIE TOP */   
+/* TOP PART */   
 
 
 .top-container {
@@ -86,7 +86,7 @@ video {
         opacity: 0%;
     }
 }
-            /* MENU DE NAVIGATION */ 
+            /* NAV MENU */ 
 .menu {
     position: fixed;
     z-index: 3;
@@ -136,7 +136,7 @@ li > a {
     
 }
 
-            /* LANGUES */
+            /* LANGUAGES */
 
 .lang > a {
     text-decoration: none;
@@ -153,7 +153,7 @@ li > a {
     opacity: 70%;
 }
 
-            /* OUVRIR MENU HAMBURGER / FERMER AVEC LA CROIX */
+            /* CLOSE & OPEN HAMBURGER (✕ and ☰) */
 
 .open-menu {
     position: fixed;
@@ -187,7 +187,7 @@ li > a {
     transform: rotate(180deg);
 }
 
-/* IMAGE, NOM */
+/* IMAGE, NAME */
 
 .img-container {
     width: 200px;
@@ -319,7 +319,7 @@ h1:before {
     display: flex;
 }
 
-/* PARTIE ABOUT ME */
+/* ABOUT ME PART */
 
 .about-container {
     background-color: #02060c;
@@ -358,7 +358,7 @@ h1:before {
     font-size: 2.8vw;
 }
 
-/* PARTIE PORTFOLIO */
+/* PORTFOLIO PART */
 
 
 .portfolio-container {
@@ -446,7 +446,7 @@ h1:before {
     transition: color 0.5s ease-out;
 }
 
-/* PARTIE CONTACT */
+/* CONTACT PART */
 
 .contact-container {
     background-color: #020914;
@@ -562,14 +562,10 @@ label {
     transform: rotate(-45deg) translateX(100%);
 }
 
-/* PARTIE RESPONSIVE (MOBILE ET TABLETTE) */
+/* RESPONSIVE PART (MOBILE & TABLET) */
 
 @media screen and (max-device-width: 850px) {
     video {
-        display: none;
-    }
-
-    .cursor {
         display: none;
     }
 
@@ -580,19 +576,36 @@ label {
 }
 
 @media screen and (max-width: 850px) {
+    .menu {
+        font-size: 2vw;
+    }
+
+    .lang {
+        font-size: 4vw;
+    }
+
+    .open-menu {
+        font-size: 5vw;
+    }
+
     .img-name {
         flex-direction: column;
         text-align: center;
     }
 
+    .dev {
+        font-size: 3.5vw;
+    }
+
     .name {
         margin-top: 8vh;
-        font-size: 4vw;
+        font-size: 5vw;
     }
 
     h1 {
         width: 60vw;
         text-align: center;
+        font-size: 5vw;
     }
 
     h1:before {
@@ -601,6 +614,27 @@ label {
 
     li {
         font-size: 2.5vw;
+    }
+
+    #title-about-me {
+        font-size: 10vw;
+    }
+
+    .title-who {
+        font-size: 4vw;
+    }
+
+    .p-who {
+        font-size: 3.2vw;
+        text-align: justify;
+    }
+
+    #title-portfolio {
+        font-size: 9vw;
+    }
+
+    .text-carousel {
+        font-size: 4vw;
     }
 
     .contact-container {
