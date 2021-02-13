@@ -167,31 +167,20 @@ right.addEventListener('click', () => {
 const video = document.getElementsByTagName('video')[0];
 const imgName = document.getElementsByClassName('img-name')[0];
 
-function mobileTabletAnimation() {
-    if(window.innerWidth < 850) {
-        imgName.style.transform = "translate3D(0, 0, 0)";
-        imgName.style.animation = "displaytop 3s ease-out forwards";
-        imgName.style.animationDelay = "0s";
-        video.style.display = "none";
-    } else {
-        video.addEventListener('play', () => {
+video.addEventListener('play', () => {
 
-            video.style.animation = "video-disapear 3s ease-in-out forwards";
-            video.style.animationDelay = "9.5s";
-        
-            imgName.style.animation = "displaytop 3s ease-out forwards";
-            imgName.style.animationDelay = "10s";
-        
-        setTimeout(function(){
-            //video.style.display = "none";
-            video.remove();
-        }, 20000)
-        
-        });
-    }
-}
+    video.style.animation = "video-disapear 3s ease-in-out forwards";
+    video.style.animationDelay = "9.5s";
 
-mobileTabletAnimation();
+    imgName.style.animation = "displaytop 3s ease-out forwards";
+    imgName.style.animationDelay = "10s";
+
+setTimeout(function(){
+    //video.style.display = "none";
+    video.remove();
+}, 20000)
+
+});
 
 /* BUTTON BACK TO TOP */
 
