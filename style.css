@@ -571,6 +571,7 @@ label {
 
     .img-name {
         transform: translate3d(0, 0, 0);
+        animation: displaytop 3s ease-out forwards;
         animation-delay: 0s;
     }
 }
