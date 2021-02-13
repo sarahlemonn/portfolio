@@ -564,17 +564,6 @@ label {
 
 /* RESPONSIVE PART (MOBILE & TABLET) */
 
-@media screen and (max-device-width: 850px) {
-    video {
-        display: none;
-    }
-
-    .img-name {
-        transform: translate3d(0, 0, 0);
-        animation-delay: 0s;
-    }
-}
-
 @media screen and (max-width: 850px) {
     .menu {
         font-size: 2vw;
@@ -587,7 +576,7 @@ label {
     .open-menu {
         font-size: 5vw;
     }
-    
+
     .close-menu {
         font-size: 4vw;
     }
