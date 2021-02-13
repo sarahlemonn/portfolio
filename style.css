@@ -213,7 +213,7 @@ li > a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 65vw;
+    width: 65%;
     margin: auto;
     opacity: 0;
     transform: translate3D(110vw, 0, 0) rotate3d(0.5, 0.5, 0, 60deg);
@@ -564,6 +564,21 @@ label {
 
 /* PARTIE RESPONSIVE (MOBILE ET TABLETTE) */
 
+@media screen and (max-device-width: 850px) {
+    video {
+        display: none;
+    }
+
+    .cursor {
+        display: none;
+    }
+
+    .img-name {
+        transform: translate3d(0, 0, 0);
+        animation-delay: 0s;
+    }
+}
+
 @media screen and (max-width: 850px) {
     .img-name {
         flex-direction: column;
@@ -596,6 +611,20 @@ label {
     #title-contact {
         margin-right: 0vw;
         margin-bottom: 10vh;
+        font-size: 10vw;
+    }
+
+    input[type="email"] {
+        width: 50vw;
+    }
+
+    #message {
+        width: 50vw;
+        height: 20vh;
+        margin: 2vh 2vw;
+        outline: none;
+        cursor: none;
+        border: none;
     }
 
     form {
@@ -603,3 +632,4 @@ label {
     }
 
 }
+
