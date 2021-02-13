@@ -587,6 +587,10 @@ label {
     .open-menu {
         font-size: 5vw;
     }
+    
+    .close-menu {
+        font-size: 4vw;
+    }
 
     .img-name {
         flex-direction: column;
